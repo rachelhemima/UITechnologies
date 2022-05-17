@@ -1,0 +1,62 @@
+<html>
+<body>
+<Center>
+<img src="employee_icon.png" height=52 width=52>
+<Font size="+3" color=red>Employee Registration Form</font>
+<form method=post action="http://localhost:8080/Apr29_Forms/register">
+<table>
+<tr>
+<td></td>
+<td><input type=radio name=initial value="Mr"checked>Mr
+<input type=radio name=initial value="Mrs">Mrs
+<input type=radio name=initial value="Ms">Ms
+</td>
+</tr><tr>
+<td>First Name</td>
+<td><input type=text name=fn placeholder="First Name"></td>
+</tr><tr>
+<td>Last Name</td>
+<td><input type=text name=ln placeholder="Last Name"></td>
+<td>City</td>
+<td><input type=text name=ct></td>
+</tr><tr>
+<td>State</td>
+<td><select name=state>
+<option value="andhra pradesh">andhra pradesh
+<option value="Maharastra">Maharastra
+<option value="Karnataka">Karnataka
+<option value="Delhi">Delhi
+</select>
+</td>
+<td>E-Mail</td>
+<td><input type=text name=email size=30></td>
+</tr><tr>
+<td>Mobile</td>
+<td><input type=text name=mob placeholder="+91"></td>
+</tr><tr>
+<td>Languages known</td>
+<td><input type=checkbox name=lk value=Telugu
+checked>Telugu</td>
+ </tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=Hindi 
+checked>Hindi</td>
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=English 
+checked>English</td>
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=Marathi >Marathi</td>
+</tr><tr>
+<td>Additional Information</td>
+<td><textarea name=add rows=3 cols=20 placeholder="Optional" 
+wrap></textarea></td>
+</tr><tr>
+<td></td>
+<td><input type=submit value=submit>&nbsp;<input type=reset 
+value=reset></td>
+</table>
+</form>
+</body>
+</html>

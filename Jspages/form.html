@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+    <script>
+        function validate(){
+            var pwd=document.myform.pass.value;
+            var cfmpwd=document.myform.cfmpass.value;
+            var flag=null;
+            if(pwd!=cfmpwd){
+                console.log("Passwords dont match");
+                document.myform.pass.value="";
+                document.myform.cfmpass.value="";
+                flag=false;
+            }
+            else{
+                document.write("welcome");
+                console.log("welcome to home page");
+                flag=true;
+            }
+            return flag;
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Validations</h1>
+    <form name="myform" method="post" onsubmit="false">
+        Enter your userId# : <input type="text" name="uid"></br>
+        Enter your password# :<input type="password" name="pass"></br> 
+        confirm your password# :<input type="password" name="cfmpass"></br> 
+        <button onclick="validate()">validate</button>
+    </form>
+</body>
+</html>

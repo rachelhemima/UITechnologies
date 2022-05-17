@@ -1,0 +1,58 @@
+*{
+    height:100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+}
+header,main,aside,footer{
+    border-color:rgb(240, 6, 6);
+    border-style: groove;
+}
+header{
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px;
+}
+header h1{
+    line-height: 100px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    direction:row;
+}
+a{
+    line-height: 100px;
+    text-align: center;
+}
+main{
+    margin: 5px;
+    display: flex;
+    flex: auto;
+    height: max-content;/*pushes footer and accomdates more content*/
+}
+article{
+text-align: center;
+height: fit-content;
+}
+#as-left{
+    width: 25%;
+    height: fit-content;
+}
+#as-right{
+    text-align: center;
+    width:30%;
+    height: fit-content;
+}
+footer{
+    text-align: center;
+    background-color: darkgrey;
+    margin:5px;
+    height:50px;
+    
+}
